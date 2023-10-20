@@ -1,8 +1,6 @@
 var assert = require("assert");
 const fetch = require("node-fetch");
 
-var mlog = require("mocha-logger").mlog;
-
 const urlProduct = "http://localhost:3000/api/products";
 
 describe("API test", function () {
@@ -15,7 +13,7 @@ describe("API test", function () {
       description: "some book",
       price: 100,
       quantity: 1,
-      category: "cat",
+      category: "Men",
     };
 
     it("Post a product", async function () {
